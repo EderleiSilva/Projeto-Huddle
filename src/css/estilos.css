@@ -1,12 +1,16 @@
 html{
     font-size: 62.5%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    max-width: 1440px;
+    height: 100vh;
 }
 
 body{
     background: url('../images/bg-desktop.svg') center center no-repeat;
     background-size: cover;
     background-color: hsl(257, 40%, 49%);
-    height: 100vh;
     font-family: 'Poppins';
     padding: 60px
 }
@@ -17,10 +21,13 @@ body{
 
 .container{
     display: flex;
-    max-width: 1400px;
-    margin: auto;
-    justify-content: center;
     gap: 30px;
+}
+
+.container .ilustracao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container .ilustracao img{
@@ -58,6 +65,7 @@ body{
 
 .container .info .btn-register:hover{
     background-color: hsl(300, 69%, 71%);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     color: #fff;
 }
 
@@ -83,5 +91,6 @@ body{
 }
 
 .footer .social:hover{
-    color: hsl(300, 69%, 71%);
+    color: hsl(300, 66%, 64%);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
